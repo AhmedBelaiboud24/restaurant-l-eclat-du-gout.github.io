@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <link href="style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alice&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alice&family=Dancing+Script:wght@400..700&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Great+Vibes&display=swap" rel="stylesheet">
+        <title>Restaurant L'Éclat du Goût</title>
+    </head>
+    <body>
+        <div class="elmnts-corp">
+        <div>
+            <button id="toggleNav" class="menu-icon">&#9776;</button>
+<nav class="side-menu" id="sideMenu">
+    <ul class="lien-ext">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="Menu.html">Menu</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+    </ul>
+    <div class="footer-nav">
+        <div class="logo">
+            <video src="../Images/Logo-video.mp4" autoplay loop muted class="logo"></video>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.Instagram.com" target="_blank"><img src="../Images/instagram.png" alt="Instagram"></a>
+            <a href="https://www.Twitter.com" target="_blank"><img src="../Images/twitter-circled.png" alt="Twitter"></a>
+        </div>
+    </div>
+</nav>
+<script>
+    document.getElementById('toggleNav').addEventListener('click', function() {
+    var sideMenu = document.getElementById('sideMenu');
+    if (sideMenu.style.left === '-300px') {
+        sideMenu.style.left = '0'; // Ouvre la barre de navigation
+        document.getElementById('toggleNav').classList.add('open'); // Ajoute la classe 'open' à l'icône de menu
+    } else {
+        sideMenu.style.left = '-300px'; // Ferme la barre de navigation
+        document.getElementById('toggleNav').classList.remove('open'); // Retire la classe 'open' de l'icône de menu
+    }
+});
+</script>
+        <h1>Restaurant L'Éclat du Goût</h1>
+        <h2>Cuisine de Qualité, Bonheur Garanti</h2>
+       <div class="par-intro">
+        <p>Bienvenue chez L'Éclat du Goût ! Niché au cœur de la charmante ville de Tigzirt, notre établissement<br>
+            gastronomique familial est le lieu idéal pour une expérience culinaire mémorable. Chez nous, la qualité<br>
+            du service est une priorité absolue. Nous sommes fiers de vous offrir une cuisine raffinée, préparée<br>
+            avec passion par notre équipe de chefs talentueux. Dans une ambiance chaleureuse et conviviale, venez<br>
+            découvrir notre carte variée mettant à l'honneur les produits frais et locaux. Que ce soit pour une<br>
+            soirée en famille, un repas entre amis ou une occasion spéciale, nous vous promettons des saveurs<br>
+            authentiques et des plats savoureux.<br>
+            Notre équipe dévouée est là pour vous accueillir et vous guider à travers notre sélection de mets exquis.<br>
+            Réservez dès maintenant et laissez-vous enchanter par une expérience gastronomique inoubliable chez L'Éclat du Goût !</p>
+        </div>
+    <div class="bouton-container">
+        <a href="Contact.html" class="bouton-1" class="slide-left">Contacter-Nous</a>
+        <a href="Menu.html" class="bouton-2" class="slide-right">Consulter Nos Menus</a>
+    </div>
+</div>
+    </body>
+</html>

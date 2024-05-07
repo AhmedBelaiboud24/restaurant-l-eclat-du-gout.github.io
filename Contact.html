@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styleContact.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alice&family=Dancing+Script:wght@400..700&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Great+Vibes&family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Formulaire de Contact</title>
+</head>
+<body>
+    <div class="elmnts-corp">
+    <div>
+        <button id="toggleNav" class="menu-icon">&#9776;</button>
+<nav class="side-menu" id="sideMenu">
+<ul class="lien-ext">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="Menu.html">Menu</a></li>
+    <li><a href="Contact.html">Contact</a></li>
+</ul>
+<div class="footer-nav">
+    <div class="logo">
+        <video src="../Images/Logo-video.mp4" autoplay loop muted class="logo"></video>
+    </div>
+    <div class="social-icons">
+        <a href="https://instagram.com"><img src="../Images/instagram.png" alt="Instagram"></a>
+        <a href="https://twitter.com"><img src="../Images/twitter-circled.png" alt="Twitter"></a>
+    </div>
+</div>
+</nav>
+<script>
+document.getElementById('toggleNav').addEventListener('click', function() {
+var sideMenu = document.getElementById('sideMenu');
+if (sideMenu.style.left === '-300px') {
+    sideMenu.style.left = '0'; // Ouvre la barre de navigation
+    document.getElementById('toggleNav').classList.add('open'); // Ajoute la classe 'open' à l'icône de menu
+} else {
+    sideMenu.style.left = '-300px'; // Ferme la barre de navigation
+    document.getElementById('toggleNav').classList.remove('open'); // Retire la classe 'open' de l'icône de menu
+}
+});
+</script>
+<h1>Restaurant L'Éclat du Goût</h1>
+<h2>Contactez-nous</h2>
+<div class="prnc-content">
+    <div class="content-left">
+    <div class="par-contact">
+        <p class="prgrph">Nous sommes là pour vous ! Pour toute question,<br>
+            commentaire ou réservation, n'hésitez pas à nous<br>
+            contacter. Remplissez simplement le formulaire<br>
+            à côté et nous vous répondrons rapidement.<br>
+            Merci de votre intérêt pour L'Éclat du Goût<br>
+        </p>
+    </div>
+    <a href="Menu.html" class="bouton-menus">Consultez nos menus et passez votre commande dès maintenant</a>
+    <div class="icon">
+        <div class="msg">
+            <img src="../Images/messagerie1.png" title="messagerie" alt="icon-msg">
+            <p class="p-msg">Restoleclatdugout@gmail.com</p>
+    </div>
+        <div class="phone">
+            <img src="../Images/telephone (1)1.png" title="messagerie" alt="icon-msg">
+            <p class="p-phone">+213 026 553 216</p>
+        </div>
+        <div class="emp">
+            <img src="../Images/emplacement (1)1.png" title="emplacement" alt="icon-localisation">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d398.8578361189548!2d4.127192!3d36.893633!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128d95005bcc1b29%3A0xce5f9dcb5f94970a!2sRestaurant%20l&#39;%C3%A9clat%20du%20go%C3%BBt!5e0!3m2!1sfr!2sdz!4v1715032187198!5m2!1sfr!2sdz" width="400" height="250" style="border:0; margin-top: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</div>
+<form action="traitement.php" method="post" class="form">
+    <div>
+        <label for="nom">Nom </label><br>
+        <input type="text" id="nom" name="nom" required>
+    </div>
+    <div>
+        <label for="prenom">Prénom </label><br>
+        <input type="text" id="prenom" name="prenom" required>
+    </div>
+    <div>
+        <label for="email">Email </label><br>
+        <input type="email" id="email" name="email" required>
+    </div>
+    <div>
+        <label for="message">Message </label><br>
+        <textarea id="message" name="message" placeholder="Ecrivez votre message..." required></textarea>
+    </div>
+    <div>
+        <button type="submit">Envoyer</button>
+    </div>
+</form>
+</div>
+</div>
+</body>
+</html>
